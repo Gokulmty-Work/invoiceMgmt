@@ -1,8 +1,4 @@
-# Use a base image with Java installed
-FROM openjdk:17-jdk-slim
-
-# Set the working directory in the container
-WORKDIR /app
+FROM openjdk:17-jdk-alpine
 
 # Copy the JAR file into the container
 COPY invMgmt.jar /app
