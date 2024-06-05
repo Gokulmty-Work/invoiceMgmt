@@ -49,7 +49,7 @@ package com.inv.controller;
 
 
 
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "https://invoice-app-soiw.onrender.com")
 	@RestController
 	@RequestMapping("/auth")   
 
