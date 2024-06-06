@@ -175,10 +175,10 @@ package com.inv.controller;
 	}
 		
 		
-		@GetMapping(value="/profilePhoto/{id}", produces=MediaType.IMAGE_PNG_VALUE)
-	    public ResponseEntity<byte[]> getProfilePhoto(@PathVariable Long id) {
+		@GetMapping(value="/profilePhoto/{profileId}", produces=MediaType.IMAGE_PNG_VALUE)
+	    public ResponseEntity<byte[]> getProfilePhoto(@PathVariable Long profileId) {
 	        
-	    	Optional<FileModel> fileEntityOptional = fileRepo.findByProfileId(id);
+	    	Optional<FileModel> fileEntityOptional = fileRepo.findByProfileId(profileId);
 
 
 	        FileModel fileEntity = fileEntityOptional.get();

@@ -33,11 +33,10 @@ public class FileModel {
 
 	
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-  	public Long id;
+  	public Long profileId;
 	
-	@Column(unique=true)
-    public Long profileId;
+//	@Column(unique=true)
+//    public Long profileId;
     
     public String fileName;
     
